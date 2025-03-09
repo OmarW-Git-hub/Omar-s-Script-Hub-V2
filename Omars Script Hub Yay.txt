@@ -1,0 +1,294 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Omar's Scripts",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Omar's Scripts",
+   LoadingSubtitle = "by Omar",
+   Theme = "Dark Blue - DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Omar's Script Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "BsARybZz8H", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+Rayfield:Notify({
+   Title = "Credits",
+   Content = "This Script Hub is by the Omar's Scripts Community",
+   Duration = 6.5,
+   Image = 4483362458,
+})
+
+local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+local Paragraph = Tab:CreateParagraph({Title = "Credits", Content = "Omar did it all 🤷‍♂️"})
+
+local Paragraph = Tab:CreateParagraph({Title = "Our Discord", Content = "https://discord.gg/BsARybZz8H"})
+        
+        local Tab = Window:CreateTab("rice glitcher", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Vexor (Saitama)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/VEXOR.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "KJ (Saitama)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/KJ.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Floating Girl (Atomic Samurai)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/FLOATING_GIRL.lua"))()   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Volta (Sonic)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/VOLTA.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Arcaura (Garou)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-ARACAURA-script-unfinished-credits-to-reap-19779"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Apophenia (Metal Bat)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Favilla (Garou)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/FAVILLA.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Star Glitcher Demo (Multiple)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/SG_DEMO.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Universal", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Super Speed",
+   Callback = function()
+   getgenv().WalkSpeedValue = 100; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Super Jump",
+   Callback = function()
+   local player=game.Players.LocalPlayer.Character
+player.Humanoid.JumpPower = 100
+print("Jump Power changed")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "g00IXploiter",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/g00lXploiter/g00lXploiter/main/Fe%20bypass", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Ghost Hub",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Mobile Keyboard",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Chat Bypass",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-NeverPatched-Bypass-official-21146"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Tiger Hub V3",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/balintTheDevX/Tiger-X-V3/main/Tiger%20X%20V3.5%20Fixed"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "RC7 (Cqwe5Rc7)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarW-Git-hub/Omar-s-Script-Hub/refs/heads/main/RC7%20Executor"))()
+   end,
+})
+
+local Tab = Window:CreateTab("TSB", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Unsealed Gojo",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Unsealed-Gojo-Moveset-20159"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Yuji",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Yuji-Moveset-by-xVicity-20072"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Minos Prime",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Minos-Prime-Custom-Moveset-24060"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Star Glitcher (Euphoria)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Star-Glitcher-Moveset-23354"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Okarun",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/FlowersTsb/Moveset/refs/heads/main/FlowersOkarun"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Gojo",
+   Callback = function()
+   getgenv().morph = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "GT Chara",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-GT-Chara-Moveset-22453"))()
+   end,
+})
+
+local Tab = Window:CreateTab("By Omar", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Kratos",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/K41M4ZYv"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Zuta",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarW-Git-hub/Zuta-Moveset-For-Garou/refs/heads/main/Zuta%20For%20Garou"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Subscript (Not on Mobile)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/q32Pxra9"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Black Stickman",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/EBiyJ81R"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Kratos V2",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarW-Git-hub/KratosJan31/refs/heads/main/Kratos_25-31-2.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Kratos V3",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarW-Git-hub/Kratos-Remake/refs/heads/main/BroFinallyReleasedKratosV3.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Sun God",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarW-Git-hub/Sun-God-Release/refs/heads/main/SunGodRelease.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Zyndra",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarW-Git-hub/Zyndra/refs/heads/main/ZyndraMovesetRelease.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Dark Lord",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarW-Git-hub/Dark-Lord-Moveset/refs/heads/main/DL.txt"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Your Scripts", 4483362458) -- Title, Image
